@@ -8,13 +8,15 @@ class Student:
 
     def age_student(self):
         current_year = datetime.now().year
-        return current_year - self.year
+        age = (current_year - self.year)
+        return age
 
     def len_of_name(self):
         langth_name = len(self.name)
         return langth_name
 
     def __str__(self):
+        return f"name = {self.name} year =  {self.year} id = {self.id}"
 
-
-print(Student)
+s = Student("ztvi", 2000, "17297999")
+print(s)
